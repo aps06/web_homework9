@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "web-homework9"
+version = "0.1.0"
+description = ""
+authors = ["Taras <93609222+aps06@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scrapy = "^2.13.3"
+docker = "^7.1.0"
+mongoengine = "^0.29.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
