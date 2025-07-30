@@ -30,7 +30,7 @@ for item in quotes_list:
         quote = Quotes(
             tags=item.get("tags", []),
             author=author,
-            qoute=item.get("quote"),
+            quote=item.get("quote"),
         )
         quote.save()
     else:

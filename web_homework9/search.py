@@ -12,19 +12,19 @@ def search_by_author(name):
     author = Authors.objects(fullname=name).first()
     if author:
         quotes = Quotes.objects(author=author)
-        return [q.qoute for q in quotes]
+        return [q.quote for q in quotes]
     return []
 
 
 def search_by_tag(tag):
     quotes = Quotes.objects(tags=tag)
-    return [q.qoute for q in quotes]
+    return [q.quote for q in quotes]
 
 
 def search_by_tags(tags):
     tags_list = tags.split(",")
     quotes = Quotes.objects(tags__in=tags_list)
-    return [q.qoute for q in quotes]
+    return [q.quote for q in quotes]
 
 
 print("Скрипт запущено. Введіть команду (name:, tag:, tags:, exit):")
